@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Keep left table scroll</title>
+    <link rel="stylesheet" href="css/scroll_h.css" type="text/css"> 
+	<style>
+	    
+        
+	</style>
+</head>
+<body>
+	<div class="table_scroll">
+        <div>
+        <table>
+		<tr>
+			<td class="keep_col_left">STT</td>
+			<td>Title 1</td>
+			<td>Title 2</td>
+			<td>Title 3</td>
+		</tr>
+        <tr><td class="keep_col_left">1</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td></tr>
+        <tr><td class="keep_col_left">2</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td></tr>
+        <tr><td class="keep_col_left">3</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td></tr>
+        <tr><td class="keep_col_left">4</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td></tr>
+        <tr><td class="keep_col_left">5</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td></tr>
+        <tr><td class="keep_col_left">6</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td></tr>
+        <tr><td class="keep_col_left">7</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td></tr>
+        <tr><td class="keep_col_left">8</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td></tr>
+        <tr><td class="keep_col_left">9</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td><td>QWERTYUIOPASDFGHJKLZXCVBNM</td></tr>
+</table></div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $(".table_scroll").niceScroll({
+        cursorcolor: "#0787ae",
+        background: "#bbb",
+        cursoropacitymin: 0.3,
+        cursorborder: "0",
+        autohidemode: false,        
+        cursorwidth:8,        
+        cursorfixedheight: 70
+    });
+    $(".table_scroll").getNiceScroll().onResize();
+});
+</script>
+</body>
+</html>

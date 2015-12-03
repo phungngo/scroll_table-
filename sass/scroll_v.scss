@@ -1,0 +1,41 @@
+body{
+	width:100%;
+	margin:0 auto;
+	padding:0;
+	overflow:hidden;
+}
+$color_white:#fff;
+$color_blue:#0787ae;
+$color_black:#000;
+.contain{
+width:90%;
+margin:0 auto;
+	.table_header{
+		width:100%;
+		border:0;
+		border-spacing: 0;
+		background:$color_blue;
+		color:$color_white;			
+		td{
+			padding:10px 0 10px 0;
+			border:1px solid #ccc;
+			text-align:center;
+		}
+	}
+	.table_contain{
+		width:100%;
+		overflow-y:hidden;
+		height:100px;
+		.table_c{
+			width:100%;
+			border:0;
+			border-spacing: 0;
+			color:$color_black;
+			td{
+				padding:10px 0 10px 0;
+				border:1px solid #ccc;
+				text-align:center;
+			}
+		}
+	}
+}

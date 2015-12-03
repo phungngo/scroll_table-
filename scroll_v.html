@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Scroll keep left column</title>
+	<link rel="stylesheet" href="css/scroll_v.css" type="text/css" />
+</head>
+<body>
+	<div class="contain">
+	<table class="table_header">
+        <tr>
+            <th>Head 1</th>
+            <th>Head 2</th>
+            <th>Head 3</th>
+            <th>Head 4</th>
+            <th>Head 5</th>
+        </tr>
+    </table>
+	<div class="table_contain">
+		<table class="table_c">
+			<tr>
+				<td>Contain 1</td>
+				<td>Contain 1</td>
+				<td>Contain 1</td>
+				<td>Contain 1</td>
+				<td>Contain 1</td>
+			</tr>
+			<tr>
+				<td>Contain 2</td>
+				<td>Contain 2</td>
+				<td>Contain 2</td>
+				<td>Contain 2</td>
+				<td>Contain 2</td>
+			</tr>
+			<tr>
+				<td>Contain 3</td>
+				<td>Contain 3</td>
+				<td>Contain 3</td>
+				<td>Contain 3</td>
+				<td>Contain 3</td>
+			</tr>
+			<tr>
+				<td>Contain 4</td>
+				<td>Contain 4</td>
+				<td>Contain 4</td>
+				<td>Contain 4</td>
+				<td>Contain 4</td>
+			</tr>
+			<tr>
+				<td>Contain 5</td>
+				<td>Contain 5</td>
+				<td>Contain 5</td>
+				<td>Contain 5</td>
+				<td>Contain 5</td>
+			</tr>
+			<tr>
+				<td>Contain 6</td>
+				<td>Contain 6</td>
+				<td>Contain 6</td>
+				<td>Contain 6</td>
+				<td>Contain 6</td>
+			</tr>
+			<tr>
+				<td>Contain 7</td>
+				<td>Contain 7</td>
+				<td>Contain 7</td>
+				<td>Contain 7</td>
+				<td>Contain 7</td>
+			</tr>
+		</table>
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $(".table_contain").niceScroll({
+        cursorcolor: "#0787ae",
+        cursoropacitymin: 0.3,
+        cursorborder: "0",
+        autohidemode: false,
+        cursorminheight: 30,
+		cursorwidth: "8px",
+		boxzoom:true,
+    });
+    $('#ascrail2000').show();
+});
+</script>
+</body>
+</html>
